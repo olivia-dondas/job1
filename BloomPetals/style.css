@@ -1,0 +1,214 @@
+* {
+
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    background-color:rgb(247, 249, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+ 
+
+header {
+
+    width: 100%;
+    background-color: rgb(207, 239, 176);
+    color: black;
+
+}      
+
+.search {
+
+    --padding: 14px;
+
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background-color: rgb(244, 248, 233);
+
+}
+
+.search-input {
+
+    font-size: 16px;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+}
+  
+.titre {
+
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 6.25rem;
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+.tronque {
+
+    display:none;
+
+}
+
+.bouton-lire {
+
+    display: inline-block;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.bouton-lire::before {
+    content: "Lire la suite";
+    font-weight: bold;
+} 
+
+
+
+.toggle {
+    display: none;
+}
+.toggle:checked ~ .tronque {
+    display: inline; 
+}
+
+.toggle:checked + .bouton-lire::before {
+    content: "Lire moins"; 
+    font-weight: bold;
+}
+
+.flex-container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    font-size: 1.5rem;
+
+}
+
+.flex-container a {
+
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.introduction {
+
+    display: flex;
+    justify-content:center;
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.introduction p {
+
+    position: relative;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+
+.conteneur-services {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.services {
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+    gap: 30px ;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+hr {
+
+    border: none;
+    border-top: 2px solid rgb(116, 115, 115);
+    margin: 0 auto;
+    width: 100%;
+    
+
+}
+
+.services img {
+
+    height: 200px;
+    width: 145px;
+    object-fit: cover;
+    flex-grow: 1; 
+    margin-bottom: 20px;
+
+}
+
+.textes-services {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    
+}
+
+.textes-services p {
+    flex-grow:1;
+    flex-basis: calc(33.33% - 30px);  
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(244, 248, 233);
+    border-radius: 10px;
+    justify-content: space-evenly;
+    margin:0;
+
+}
+
+
+footer {
+
+    width: 100%;
+    background-color: rgb(207, 239, 176);
+    color: black;
+    padding: 20px;
+    margin-top: auto 50px;
+}
